@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCTION</title>
+    <link rel="stylesheet" href="function.css">
+</head>
+<body>
+    <!-- function are segmented into 2 forms:
+    we have declaration -->
+
+    <!-- 
+    function declaration
+    function funcName () {
+       code goes here...
+    }
+    -->
+
+    <input type="number" id="num1" name="num1" placeholder="Enter a number">
+    <button onClick="numberEvOd();">Check</button>
+    <p id="check"></p>
+
+    <h2>Enter Year Of Birth</h2>
+    <input type="number" id="age" name="age" placeholder="Enter Birth Year">
+    <button onclick="callAge();"> check Age</button>
+    <p id="showAge"></p>
+
+
+    <h3>Gender revel</h3>
+    <input type="text" id="gender" name="gender" placeholder="Enter Boy or Girl" required>
+    <input type="button" value="Check Gender" onclick="showGender();">
+    <div id="boyOrGirl"></div>
+
+
+    <div id="contentBox"></div>
+    <button  onclick="show_hide_contentBox();">show/hide</button>
+
+    <div id="blue_red">Hello, you are Welcome!!!</div>
+    <button onmouseover="change_bgRed();">Change Color</button>
+
+  
+<script src="function.js"></script>
+</body>
+</html>

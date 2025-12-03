@@ -1,0 +1,25 @@
+#contentBox{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: orange;
+            display: block;
+}
+
+#blue_red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: black;
+    border-radius: 10px;
+}
+
+
+/* #blue_red.red{
+    background-color: red;
+    color: black;
+} */

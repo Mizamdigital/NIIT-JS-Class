@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fac5c5ff;
+}
+
+#mainContent{
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+#studentBox{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.studentCard{
+    width: 95%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0px 10px 0px;
+}
+
+.studentCard img{
+    margin: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    order: 0;
+}
+
+.studentCard .stu-dept{
+  order: 2;
+}
+.studentCard .stu-name{
+  color: blue;
+  font-weight: bold;
+  order: 1;
+}
+
+.studentCard .stu-level{
+  color: green;
+  font-weight: bold;
+  order: 4;
+}
