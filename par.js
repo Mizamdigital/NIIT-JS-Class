@@ -54,3 +54,6 @@ document.write(message.trim() +"<br>");
 document.write("<br>");
 
 document.write(message.split(""));
+
+
+

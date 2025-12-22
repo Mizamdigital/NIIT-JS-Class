@@ -14,7 +14,7 @@ function appendNumber(number) {
         updateOutput();
       }
 
-      function appendOperator(operator) {
+     function appendOperator(operator) {
         if (currentInput === "") return;
         currentInput += operator;
         displayType.innerText = "";

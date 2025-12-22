@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+      <header></header>
+    
+    <!-- create a paragraph -->
+    <h1></h1>
+
+    <p></p>
+    <!-- create a list with two items -->
+  <ul>
+    <li class="list"></li>
+    <li class="list"></li>
+  </ul>
+
+  <!-- light bulb example -->
+ <!--  <div id="lightbulb">
+    <img src="images/off.jpg" width="300" height="250" id="bulb">
+  </div>
+
+  <button onclick="bulb_Switch();">On</button>
+
+  <button onclick="bulb_SwitchOff();">Off</button> -->
+
+  <!-- create another element and append to the body -->
+  <div id="anotherElement">
+
+  </div>
+
+  <!-- example 2: creating a on/off light bulb with single switch button. -->
+
+  <img id="bulbs" src="images/off.jpg" alt="" width="300">
+
+  <button onclick="toggleBtn();">Press Switch</button>
+
+    <!-- 
+      DOM -- document object model 
+      DOM manipulation : create element, 
+
+
+      finding html element:
+     1 document.getElementById(id);
+     2 document.getElementByTagName(name); ..getElementsByTagName() returns an HTMLCollection (like an array)
+     3 document.getElementByClassName
+     4 document.querySelector()
+     5 document.querySelectorAll()....RETURNS MANY ITEMS
+    -->
+
+
+    <p class="paragraph">This is a paragraph</p>
+    <p class="paragraph">This is a paragraph</p>
+
+    <ul>
+      <li class="food">Carbohydrates</li>
+      <li class="food">Protein</li>
+      <li class="food">Fat & oil</li>
+      <li class="food">Vitamin</li>
+      <li class="food">Mineral</li>
+
+    </ul>
+
+    <!-- create and add element using dom -->
+     <div id="container"></div>
+
+
+     <!-- for loop -->
+     <script src="dom.js"></script>
+</body>
+</html>
