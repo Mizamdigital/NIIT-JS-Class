@@ -60,7 +60,6 @@ const carS = new carPack("Benz","black","auto");
 const myCar = new carPack("Lexus","gray","manual");
 const myCars = new carPack("Venza","white","auto");
 const myCa = new carPack("Honda","sliver","auto");
-
 document.write(carS.name + " " + carS.color + " " + carS.transmission + "<br>");
 document.write(myCar.name + " " + myCar.color + " " + myCar.transmission + "<br>");
 document.write(myCars.name + " " + myCars.color + " " + myCars.transmission + "<br>");

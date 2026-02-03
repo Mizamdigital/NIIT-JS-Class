@@ -28,7 +28,7 @@ document.write(Math.floor(Math.random()*(50-1))+"<br>");
 document.write(Math.floor(Math.random()*(200-100))+100+"<br>");
 
 
-// calculate 100 exp 10
+// calculate 100 exponent 10
  document.write(Math.pow(100,10) + "<br>");
 
  //find the square root of 225

@@ -56,4 +56,48 @@ document.write("<br>");
 document.write(message.split(""));
 
 
+//bom
+
+//window()
+var name = "funmi";
+console.log(window.name);
+
+//alert()
+function printName (){
+    alert(window.name);
+} 
+printName();
+
+
+
+//confirm()
+
+let comfirmation = window.confirm("do you want to leave the page?");
+
+if(comfirmation){
+    window.alert("user left the page");
+
+    //location
+    window.location.href ="Dom.html"
+}else{
+    alert("user is staying");
+}
+
+
+
+//prompt() 
+var name = window.prompt("Enter your first name");
+
+if (name){
+    document.write(window.name);
+}
+
+document.write("<br>");
+
+//navigator()
+document.write(navigator.platform);
+
+document.write("<br>");
+
+document.write(navigator.language);
 

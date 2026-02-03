@@ -18,8 +18,7 @@ i++
 i=0;
 do{
 console.log(i);
-i++;
-}
+i++}
 while(i < 5); */
 
 //for loop:
@@ -172,7 +171,7 @@ document.write("<br>")
 
     //using while loop 
 
-    /* let a = 0;
+    /* let a = 1
     while(a <= 12){
         document.write("multiplication table" + " " + a + "<br>");
         a++;
@@ -200,15 +199,30 @@ document.write("<br>")
 
 document.write("<br>")
 
+    //using while loop to print out patterns
+    let y= 0;
+    while(y < 10){
+        let xox =" ";
+        y++;
+
+        let m = 1;
+        while(m <=y){
+            xox += "o";
+            m++;
+        }
+        document.write(xox + "<br>");
+    }
+document.write("<br>")
+
 
     //javascript object notation:
    const itemsObj = [
     {product_name: "shirt",
         price: 2000
     },
-    {productName: "shoe",
+    {product_name: "shoe",
         price: 5000
-    }
+    },
 ];
 
 for (let i = 0; i < itemsObj.length; i++) {
@@ -237,7 +251,7 @@ const customer = [
 ];
 
 for (let l = 0; l < customer.length; l++) {
-    document.write(customer[l].name + " " + "bought:" + " " + customer[l].product + " " + customer[l].price +"<br>");
+    document.write(customer[l].name + " " + "bought:" + " " + customer[l].product + " " +"at" + " " +customer[l].price +"<br>");
 }
 
 

@@ -3,11 +3,14 @@
      h1.setAttribute("class","header");
      h1.setAttribute("id","mainHeader"); 
      h1.style.backgroundColor = "pink";
-     h1.style.width = "100%";
+     h1.style.width = "80%";
      h1.style.height = "60px";
      h1.style.display = "flex";
      h1.style.alignItems = "center";
      h1.style.justifyContent = "center";
+     h1.style.margin = "auto";
+     h1.style.marginTop = "20px";
+     h1.style.borderRadius = "10px";
 
       
      //list items
@@ -95,7 +98,7 @@ let header = document.querySelector("header");
    header.style.justifyContent = "space-between";
    header.style.padding = "0 40px";
 
-   //creating a span and appendChild to header
+   //creating a span (logo) and appendChild to header
 
    let span = document.createElement("span");
    span.setAttribute("class","spanLogo");
@@ -118,6 +121,7 @@ let header = document.querySelector("header");
    let nav = document.createElement("ul");
      nav.style.listStyleType = "none";
      nav.style.display = "flex";
+     
     
 
    document.getElementById("mainContainer").appendChild(nav);
@@ -130,6 +134,7 @@ let header = document.querySelector("header");
    navItems.forEach( (item, index) =>{
       let li = document.createElement("li");
       let a =  document.createElement("a");
+   
       a.innerText = item;
       a.href = navLinks[index];
       
@@ -138,9 +143,11 @@ let header = document.querySelector("header");
        li.style.marginInline = "2em";
        li.style.cursor = "pointer";
        li.style.fontWeight = "bold";
+       
 
       nav.appendChild(li);
       li.appendChild(a);
+      
    });
 
 
@@ -180,15 +187,17 @@ let header = document.querySelector("header");
    //append child:
 
    const newElement = document.createElement("p");
-    newElement.textContent ="Hello,this is a new HTMelement";
+    newElement.textContent ="Hello,this is a new HTML element";
     document.getElementById("container").appendChild(newElement);
 
 
     //using for loop to 
-    let container = document.getElementsById("Container");
-    for(let i = 1; i <= 5; i++){
+    const container = document.getElementById("container");
+    for (let i = 1; i <= 5; i++){
       const p = document.createElement("p");
-      p. textContent = "Hello, This is a new HTM...";
+      p.textContent = "Hello, This is a new HTML...";
+
+      container.appendChild(p);
     }
 
-    document.getElementById("container").appendChild(newElement);
+    

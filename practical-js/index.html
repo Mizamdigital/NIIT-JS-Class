@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-nav">
+           <div id="logo"><img src="images/logo2.png" alt=""></div>
+
+          <nav>
+            <a href="">Home</a>
+            <a href="">All product</a>
+            <a href="">Categories</a>
+            <a href="">Cart</a>
+            <a href="">User</a>
+            <a href=""><button class="login"> Login</button></a>
+            <a href=""><button class="signup">Create Account</button></a>
+          </nav>
+
+        </div>
+           <!-- banner -->
+        <div class="hero_box">
+            <img src="images/banner1.png" alt="Hero Image">
+        </div>
+    </header>
+
+    <div class="search_cart">
+        <i class="fa fa-user-circle-o" style="font-size: 24px; color: rgb(144, 8, 8);"></i>
+        <input type="search" id="search" placeholder="Search shoes....">
+        <button onclick="openCart();">
+              <span>
+            <i class="fa fa-shopping-cart" style="font-size: 24px; color: rgb(144, 8, 8);"></i>
+            <sup>
+                <span id="cart-count" style="color: rgb(144, 8, 8);">0</span>
+            </sup>
+        </span>
+        </button>
+        
+    </div> 
+    <!-- display product -->
+    <section class="products" id="product-list"></section>
+
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <h3>Your Cart:</h3>
+            <div id="cart-items"></div>
+
+            <h4>Total: $
+               <span id="total-price">0</span>
+            </h4>
+            <button onclick="checkout();">Checkout</button>
+            <button onclick="closeCart();">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+    <!-- 
+    .find() to find an item in an array
+    .map() to transform items in an array
+    .filter() to filter items in an array
+    .reduce() to accumulate values in an array
+     
+    -->
+</body>
+</html>

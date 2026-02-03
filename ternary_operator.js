@@ -64,19 +64,19 @@ let greetings = (day == "Thursday") ? "!Hey user, it's Thursday" : "It's another
  //there 2 way of adding condition, which are if condition and switch case
  //we use switch case to display base on the number of case
 
- let day = new Date().getDay();
+ let days = new Date().getDay();
  let message;
- switch(day){
+ switch(days){
     case 1:
         message = "Today is Monday";
         break;
-         case 2:
+    case 2:
         message = "Today is Tuesday";
         break;
     case 3:
         message = "Today is Wednesday";
         break;    
-         case 4:
+    case 4:
         message = "Today is Thursday";
         break;
     case 5:

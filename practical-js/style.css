@@ -1,0 +1,152 @@
+:root{
+            --bg-background: linear-gradient(to left, rgb(144, 8, 8), rgb(206, 60, 60), rgb(107, 0, 0));
+            --links-color:white;
+            
+        }
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            background: var(--bg-background);
+        }
+        header .header-nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding-top: 5px;
+        }
+        #logo img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: white;
+            /* margin-top: 5px;  */
+        }
+
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a{
+            color: white;
+            float: right;
+            font-size: 1.0em;
+            font-weight: bold;
+            margin: 20px;
+        }
+        header nav .login{
+            color: rgb(107, 0, 0);
+            background-color: white;
+            border-radius: 7px;
+            font-size: 1.0em;
+            padding: 8px 12px;
+            border: 0px;
+            margin-left: 5rem;
+
+        }
+
+        header nav .signup{
+            color: white;
+            background-color: rgb(107, 0, 0);
+            border-radius: 7px;
+            font-size: 1.0em;
+            padding: 8px 12px;
+            border: 0px;
+        }
+        .hero_box img{
+            width: 60%;
+            margin-left: 4%;
+            margin-right: 4%;
+            margin-top: 4px;
+            height: 350px;
+        }
+        header .hero_box{
+            /* background-color: rgb(107, 0, 0); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+            width: 100%;
+            margin-top: 30px;
+        }
+        .search_cart{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+        }
+        .search_cart input[type="search"]{
+            width: 70%;
+            border: 2px solid rgb(243, 94, 94);
+            border-radius: 12px;
+            padding: 4px;
+            font-size: 1.0em;
+            margin: 0px 20px 0px 20px;
+
+        }
+
+        #cart-modal{
+            background-color: rgb(144, 8, 8);
+            width: 20vw;
+            z-index: 1000;
+            height: 74vh;
+            top: 0px;
+            position: absolute;
+            display: none;
+        }
+
+        .products{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .card img{
+            width: 300px;
+            height: 250px;
+        }
+
+        .modal{
+            padding: 20px 20px;
+        
+        }
+
+        .modal-content h3{
+           font-size: 2rem;
+           font-weight: bold;
+           color: white;
+           margin-bottom: 10px;
+        }
+
+        .modal-content h4{
+           font-size: 1rem;
+           font-weight: bold;
+           color: white;
+           margin-bottom: 10px;
+        }
+
+        #cart-items{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .modal button{
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(107, 0, 0);
+            
+            
+        }

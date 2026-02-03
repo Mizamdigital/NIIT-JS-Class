@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #contentbox{
+            background-color: aqua;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- BROWSER OBJECT MODEL (BOM): 
+            it provides a way for your code to talk to web. it handles everything outside of the document i.e it deal with browser window.
+         Javascript API browser:  
+             
+
+         KEY COMPONENTS OF BOM:
+         window : are the main container representing the browser window
+         it's Methods are ALERT, PROMPT, CONFIRM, TIMERS (setTIMEOUT, setINTERVAL), open, close (). properties are innerHeight, innerWidth.
+
+         navigator: contain info about the browser app such as,language, name,version and platform
+
+         location: use to get or change the current URL information and also redirect the browser to a new page i.e another URL, it uses properties like href, protocol, host, pathname, search, hash.
+
+         history: Accesses the browser's session history and also provide methods to go back and forward to the pages in the browser history such as back(), forward(), go()
+
+         screen: it provide info about the user's screen such as height, width, colorDepth, pixelDepth.
+
+    -->
+
+    <!-- Responsive background logic -->
+    <div id="contentbox">
+
+    </div>
+
+    <!-- count down -->
+<div id="timer-div">15</div>
+
+<!-- stop alert -->
+<button id="stopAlert">Kill Alert</button>
+
+    <script src="Bom.js"></script>
+</body>
+</html>

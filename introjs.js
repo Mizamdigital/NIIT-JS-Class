@@ -64,16 +64,19 @@ greetStudents();
 greetStudents();
 
 //Data types in Js
+//primitive data types
  string -- sequence of characters  //"young doe"
  Number -- interger or Float //10
- object -- collection of key-value pairs
  Boolean -- true or false  //true
- subject -- collection of items //{name: "john", 20}
- array -- collection of items //{"math, "science", "history"}
  null -- no value //null
  undefined --variable declared but not assigned a value //undefined
- Symbol-- unique and immutable value // let uniqueID = symbole("id");
+ Symbol-- unique and immutable value // let uniqueID = symbole("id");                                                                                                                                                                                                                                                                                                                                        
+ BigInt -- larger integer values //let bigIntNum = 9007199254741991n;
 
+//non-primitive data types
+ object-- collection of key-value pairs
+ subject-- collection of items //{name: "john", 20}
+ array -- collection of items //{"math, "science", "history"}
 
 x=10,y=20, sum=x+y;
  document.write("The sum of:" + x + "and" + y + "is:" + sum);

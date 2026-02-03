@@ -1,5 +1,5 @@
 let text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, hic?";
-let text2 = "    Hello!   This is JS       ";
+let text2 = "    Hello!   This is JS     ";
 
 
 document.write(text.toUpperCase() + "<br>"); // to Upper Case()
@@ -15,9 +15,9 @@ document.write(text[0] + "<br>"); // to get a character at a specific position
 document.write(text.slice(4,20) + "<br>"); // to get a part of the string (start position, end position)
 
 document.write(text.length + "<br>"); // to get the length of the string
-document.write(text2.trim());// to remove spaces from the beginning and the end of the string
+document.write(text2.trim()); // to remove spaces from the beginning and the end of the string
 
-document.write("<br>");
+document.write("<br>"); 
 
 
 
@@ -47,11 +47,13 @@ document.write(classEx + "<br>");
 document.write("<br>");
 
 
-let letters = " A, B, C, D, E, G, K, L, O, T, Q, O, R, S";
+let letters = "A, B, C, D, E, G, K, L, O, T, Q, O, R, S";
 
 document.write(letters.replace("T","W"));
 
-document.write("<br>");
+document.write("<br>"); 
+
+document.write(letters.slice(4,9) + "<br>");
 
 
 
