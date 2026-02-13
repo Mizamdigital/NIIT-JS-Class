@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+</head>
+<body>
+    <!-- Ajax  (asynchronously javascript xml)-->
+    <!--
+   1, AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+      
+    What is AJAX?
+
+AJAX = Asynchronous JavaScript And XML.
+
+AJAX is not a programming language.
+
+AJAX just uses a combination of:
+
+    A browser built-in XMLHttpRequest object (to request data from a web server)
+    JavaScript and HTML DOM (to display or use the data)
+
+   2, Modern Browsers can use Fetch API instead of the XMLHttpRequest Object.
+
+The Fetch API interface allows web browser to make HTTP requests to web servers.
+
+If you use the XMLHttpRequest Object, Fetch can do the same in a simpler way.
+
+//The XMLHttpRequest object can be used to exchange data with a web server behind the scenes.
+//syntax to create XMLHttpRequest Object
+variable = new XMLHttpRequest();
+
+//Define a Callback Function
+
+A callback function is a function passed as a parameter to another function.
+//syntax
+xhttp.onload = function() {
+  // What to do when the response is ready
+}
+
+//Check the status of the request
+
+  200 → ok
+
+  201 → created
+
+  301 → moved permanently or redirected
+
+  400 → bad request
+
+  403 → forbidden
+
+  404 → file not found
+
+  500 → server crash 
+
+//Send a Request
+
+To send a request to a server, you can use the open() and send() methods of the XMLHttpRequest object:
+xhttp.open("GET", "ajax_info.txt",true);
+xhttp.send(); 
+
+// 
+GET or POST?
+
+GET is simpler and faster than POST, and can be used in most cases.
+
+However, always use POST requests when:
+
+    A cached file is not an option (update a file or database on the server).
+    Sending a large amount of data to the server (POST has no size limitations).
+    Sending user input (which can contain unknown characters), POST is more robust and secure than GET.
+
+
+    --> 
+     
+    <div id="contentbox">
+       <h2>Ajax page content...</h2>
+       <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
+       
+    
+    
+<script src="ajax.js"></script>
+</body>
+</html>

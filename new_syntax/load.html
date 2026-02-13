@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- content -->
+    <button onclick="loadHtml();">Click me</button>
+    <div id="output"></div>
+
+    <!-- class work
+      -->
+    <button onclick="textFile();">Click</button>
+    <span id="result"></span>
+
+    <script>
+        async function loadHtml(){
+            try{
+                const response = await fetch("http://127.0.0.1:5500/new_syntax/content.html");
+
+                if(!response.ok){
+                    throw new Error("Network response was not ok");
+                }
+                const html = await response.text();
+                document.getElementById("output").innerHTML = html;
+            }
+            catch(error){
+                console.log(error);
+            }
+        }
+
+        /* class work */
+        async function textFile(){
+           try{
+             const response = await fetch("classDocs.txt");
+
+             if(!response.ok){
+                throw new Error("Allah is great");
+             }
+             const html = await response.text();
+             document.getElementById("result").textContent = html;
+           }
+           catch(error){
+            console.log(error);
+           }
+        }
+         
+    </script>
+</body>
+</html>

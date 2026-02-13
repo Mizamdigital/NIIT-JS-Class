@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- responses means res -->
+
+<body>
+    <script>
+        async function fetchData(){
+          try{
+            const response = await Promise.resolve({json: async()=>({
+            userId:1,
+            id:1,
+            title:"delectus aut autem",
+            body: "this is a test body"
+          })
+            });
+
+            const data = await response.json();
+            console.log(data);
+        }
+        catch(error){
+            console.error("Error fetching data", error);
+        }
+        }
+        fetchData();
+
+
+        function getData(){
+            return new Promise(resolve=>{
+                setTimeout(() => {
+                    resolve("Data fetched successfully");
+                }, 2000);
+            });
+        }
+           async function showData(){
+            const result = await getData();
+            console.log(result);
+           }
+           showData();
+          
+
+           /* fetch api */
+           
+            async function getUser(){
+                try{
+              const responses = await fetch("syntax_2.json");
+              const data = await responses.json();
+              console.log(data);
+           }
+           catch(error){
+             console.log("Error fetching data", error);
+           }
+           }
+              getUser();
+
+        
+              
+              function step1(){
+                return new Promise(resolve=>{
+                    setTimeout(()=>{
+                        resolve("Step 1 completed");
+                        resolve();
+                    },1000);
+                    })
+                }
+            function step2(){
+                return new Promise(resolve=>{
+                    setTimeout(()=>{
+                        resolve("Step 2 completed");
+                        resolve();
+                    },1000);
+                    })
+                }
+                function step3(){
+                return new Promise(resolve=>{
+                    setTimeout(()=>{
+                        resolve("Step 3 completed");
+                        resolve();
+                    },1000);
+                    })
+                }
+
+                async function runSteps(){
+                    await step1();
+                    await step2();
+                    await step3();
+                    console.log("All steps completed");
+                }
+
+               runSteps();
+
+
+   
+    </script>
+</body>
+</html>

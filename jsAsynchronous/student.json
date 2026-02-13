@@ -1,0 +1,32 @@
+[
+    {
+        "Name": "Akinola",
+        "Dept": "Computer Science",
+        "Level": "400level",
+        "CGPA": 4.50,
+        "Age": "1986-12-14"
+    },
+    {
+        "Name": "Ayoola",
+        "Dept": "Agric Science",
+        "Level": "400level",
+        "CGPA": 5.00,
+        "Age": 32
+    },
+    {
+        "Name": "Samuel",
+        "Dept": "Mathematics",
+        "Level": "400level",
+        "CGPA": 4.1,
+        "Age": 28
+    },
+    {
+        "Name": "Adeola",
+        "Dept": "medical science",
+        "Level": "400level",
+        "CGPA": 3.9,
+        "Age": 26
+    }
+    
+
+]

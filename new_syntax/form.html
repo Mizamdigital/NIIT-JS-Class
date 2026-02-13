@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <h2>Sign up</h2>
+    <form action="#" method="POST" id="signupForm">
+        <input type="text" id="name" placeholder="Name" required><br><br>
+        <input type="email" id="email" placeholder="Email" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="box" id="output">
+        waiting on for sign up
+    </div>
+
+    <script>
+        /* the e track the user interaction/inputs
+        by default fetch is post method but we can change it to get or any other method as per our requirement
+        */
+         document.getElementById("signupForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+
+            try{
+                const response = await fetch("http://jsonplaceholder.typicode.com/posts",
+                    {
+                        method: "POST",
+                        headers: {
+                            "content-type": "application/json"
+                        },
+                        body: JSON.stringify({name,email})
+                    });
+
+                    const data = await response.json();
+
+                    document.getElementById("output").innerHTML = 
+                    `<h3> Name: ${data.name}</h3>
+                    <p> Email: ${data.name}</p>
+                    `;
+                }
+                
+            catch(error){
+                console.log(error);
+            }
+         });
+    </script>
+</body>
+</html>

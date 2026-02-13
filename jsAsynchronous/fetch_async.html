@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Asynchronous JavaScript</h2>
+    <button id="show-alert">Click me!</button>
+
+    <!-- class work -->
+       <div id="manipulatDiv"></div>
+
+    <script>
+       
+       let btn = document.getElementById("show-alert");
+       btn.addEventListener("click", ()=>{
+        alert("Button Clicked!");
+         });
+
+
+          console.log("A");
+          console.log("B");
+          console.log("C");
+
+          /* Asynchronous JavaScript*/
+
+          console.log("A");
+
+           window.setTimeout(()=>{
+            console.log("B");
+           },5000);
+           
+           console.log("C");
+
+
+           /* greetings */
+
+           console.log("Hello JSON");
+           console.log("Running on setTimeout Function");
+           console.log("This Programming is runs asynchronously");
+
+           console.log("Hello JSON");
+            window.setTimeout(()=>{
+                console.log("Running on setTimeout Function");
+            },1000);
+              console.log("This Programming is runs asynchronously");
+
+
+           function greet(name,callback){
+            console.log("Hello:" +" "+ name);
+            callback();
+           }
+
+           function sayGoodBye(){
+            console.log("GoodBye");
+           }
+
+           greet("Shola", sayGoodBye);
+
+
+           /* call back hell  i.e you are having a call back function inside another call back function*/
+
+
+           function step1(callback){
+            setTimeout(()=>{
+                console.log("step1 completed");
+            },1000);
+            callback();
+           }
+
+           function step2(callback){
+             setTimeout(()=>{
+                console.log("step2 completed");
+             },1000);
+             callback();
+           }
+
+           function step3(callback){
+            setTimeout(()=>{
+                console.log("step3 completed");
+             },1000);
+            callback();
+           }
+
+           step1(()=>{
+            step2(()=>{
+                step3(()=>{
+                    console.log("All steps completed");
+                })
+            });
+           });
+
+           /* class work */
+           /* use it to display steps involved in manipulating a dom element using javascript. e.g div element*/
+  
+
+           function firstStep(callback){
+            setTimeout(()=>{
+                console.log("Creating the first div element");
+            },1000);
+            callback();
+
+           }
+
+           function secondStep(callback){
+             setTimeout(()=>{
+                console.log("Adding some text to the div element");
+             },1000);
+             callback();
+           
+           }
+
+           function thirdStep(callback){
+            setTimeout(()=>{
+                console.log("Changing the background color of the div element");
+             },1000);
+            callback();
+           }
+        
+              firstStep(()=>{
+                secondStep(()=>{
+                    thirdStep(()=>{
+                        console.log("All the steps involved in manipulating a div element is completed");
+                    });
+                });
+              });
+           
+
+    </script>
+    
+</body>
+</html>
